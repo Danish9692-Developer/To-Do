@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do App</title>
+  <link rel="stylesheet" href="index.css">
+  <style>
+    body { font-family: Arial; padding: 20px; }
+    input { padding: 5px; width: 200px; }
+    button { padding: 5px 10px; margin-left: 5px; }
+    ul { list-style: none; padding: 0; }
+    li { padding: 5px; background: #f2f2f2; margin: 5px 0; display: flex; justify-content: space-between; align-items: center; }
+    li.completed { text-decoration: line-through; color: rgb(202, 23, 23); }
+  </style>
+</head>
+<body>
+
+  <h2>To-Do List</h2>
+
+
+  <form id="taskForm">
+    <input type="text" id="taskInput" placeholder="Enter new task">
+    <button type="submit">Add Task</button>
+  </form>
+
+  <p>Total Task: <span id="taskCount">0</span></p>
+
+  <ul id="taskList"></ul>
+
+  <script src="todo.js"></script>
+</body>
+</html>
